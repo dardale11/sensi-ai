@@ -1,0 +1,15 @@
+.alert-container {
+  margin-top: 25px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 5px red;
+}
+
+.alert-message {
+  text-align: center;
+  color: red;
+  font-size: 48px;
+  font-weight: bold;
+}
