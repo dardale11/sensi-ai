@@ -17,6 +17,7 @@ import { DataElement } from '../../interfaces/dataElement';
 
 const Graph = () => {
   useEffect(() => {
+
     const socket = io(process.env.REACT_APP_SERVER_URL ?? 'http://localhost:8000');
 
     startListeningToDevice(socket);
