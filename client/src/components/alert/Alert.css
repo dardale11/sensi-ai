@@ -2,6 +2,7 @@
   margin-top: 25px;
   padding: 25px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border: solid 5px red;
@@ -12,4 +13,13 @@
   color: red;
   font-size: 48px;
   font-weight: bold;
+  text-decoration: underline;
+}
+
+.alert-button {
+  background-color: red;
+  color: white;
+  border-radius: 30%;
+  font-size: 36px;
+  padding: 25px;
 }

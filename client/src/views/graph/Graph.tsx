@@ -57,13 +57,7 @@ const Graph = () => {
   }
 
   const onPulseHigh = () => {
-    if (!showAlert)
-      setAlert(true);
-    setTimeout(() => {
-      if (showAlert)
-        setAlert(false)
-    }, 5000)
-
+    setAlert(true);
   }
 
   return (
@@ -85,7 +79,7 @@ const Graph = () => {
         <Legend />
         <Line type="monotone" dataKey="pulse" stroke="#FF0000" animationEasing='linear' isAnimationActive={false} />
       </LineChart>
-      {showAlert && <Alert />}
+      {showAlert && <Alert cancel={() => setAlert(false)} />}
     </div>
   )
 }
