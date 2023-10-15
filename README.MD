@@ -14,7 +14,6 @@ usage:
 
 - `cd client`
 - `npm i`
-- define `REACT_APP_SERVER_URL: http://localhost:8000` in enviroment
 - `npm start`
 
 ## server
@@ -25,5 +24,4 @@ usage:
 
 - `cd server`
 - `npm i`
-- define `PORT = 8000` in enviroment
 - `node server.ts`

@@ -11,7 +11,7 @@ if (process.env.NODE_ENV !== 'production') {
 const app: Express = express();
 configureMiddleware(app);
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT ?? 8000;
 
 const server = app.listen(PORT, () => {
   console.log(`running on port ${PORT}`);
